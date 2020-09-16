@@ -3,7 +3,7 @@
 # Prohibited line endings: \r\n
 
 git grep --cached -I -n --no-color -P '\r$' -- ':/' |
-awk '
+  awk '
     BEGIN {
         FS = ":"
         OFS = ":"

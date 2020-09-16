@@ -2,7 +2,7 @@
 # Checks for trailing whitespace
 
 git grep --cached -I -n --no-color -P '[ \t]+$' -- ':/' |
-awk '
+  awk '
     BEGIN {
         FS = ":"
         OFS = ":"
