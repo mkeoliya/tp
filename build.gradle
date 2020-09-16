@@ -76,7 +76,6 @@ githook {
     hooks {
         "pre-push" {
             task = "test"
-            shell = "test"
         }
     }
 }
