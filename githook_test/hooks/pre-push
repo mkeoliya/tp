@@ -1,0 +1,10 @@
+#!/bin/sh
+# gradle-githook
+
+$(echo "/Users/mayank/Desktop/CS2103/tp/gradlew") test
+[ $? -gt 0 ] && exit 1
+
+someShell
+[ $? -gt 0 ] && exit 1
+
+exit 0

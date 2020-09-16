@@ -71,10 +71,9 @@ shadowJar {
 }
 
 githook {
-    gradleCommand = file("gradle_test")
     hooksDir = file(new File(rootDir, "githook_test/hooks"))
-    failOnMissingHooksDir = false
-    createHooksDirIfNotExist = false
+    failOnMissingHooksDir = true
+    createHooksDirIfNotExist = true
     hooks {
         "pre-push" {
             task = "test"
