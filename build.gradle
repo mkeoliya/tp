@@ -71,7 +71,6 @@ shadowJar {
 }
 
 githook {
-    hooksDir = file(new File(rootDir, "githook_test/hooks"))
     failOnMissingHooksDir = true
     createHooksDirIfNotExist = true
     hooks {
