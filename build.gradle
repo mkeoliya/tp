@@ -77,7 +77,7 @@ githook {
     createHooksDirIfNotExist = false
     hooks {
         "pre-push" {
-            task = "clean"
+            task = "test"
             shell = "someShell"
         }
     }
