@@ -75,7 +75,7 @@ githook {
     createHooksDirIfNotExist = true
     hooks {
         "pre-push" {
-            task = "gradlew test"
+            task = "run"
         }
     }
 }
